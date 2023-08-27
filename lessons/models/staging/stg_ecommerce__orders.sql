@@ -4,13 +4,18 @@ WITH source AS (
 )
 
 SELECT
+        -- IDs
         order_id,
         user_id,
-        status,
-        gender,
+
+        -- timestamps
         created_at,
         returned_at,
         shipped_at,
         delivered_at,
-        num_of_item
+
+        -- other
+        status,
+        num_of_item as num_items_ordered
+
 FROM source
