@@ -25,10 +25,6 @@ models:
                 - Complete
                 - Returned
 
-
-      - name: gender
-        description: "gender?"
-
       - name: created_at
         description: "create date"
 
@@ -41,5 +37,5 @@ models:
       - name: delivered_at
         description: "date delivered"
 
-      - name: num_of_item
+      - name: num_items_ordered
         description: "the number of items in the order"

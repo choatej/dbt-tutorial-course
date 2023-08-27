@@ -22,3 +22,12 @@ snapshot-paths: ["snapshots"]
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
+
+# create models as tables instead of materialized views
+# the plus is optional but nice to have
+models:
+  lessons:
+    +materialized: table
+    +persist_docs:
+      relations: true
+      columns: true
